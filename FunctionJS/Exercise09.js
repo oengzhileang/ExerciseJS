@@ -1,4 +1,4 @@
-let arr = [11,9,3,20,7,8,1,33]
+let arr = [11,9,3,20,7,8,1]
 function MedianValue (arr){
     let median=0;
     for(let i = 0; i < arr.length; i++){
@@ -15,7 +15,7 @@ function MedianValue (arr){
         median = arr[((arr.length+1)/2 )-1]
         return median
     } else{
-        median = (arr[((arr.length)/2 )-1] + arr[(arr.length)/2])/2
+        median = (arr[((arr.length)/2 )-1] + arr[(arr.length)/2])  /  2
         return  median
     }
     // return arr;

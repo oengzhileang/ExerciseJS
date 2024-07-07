@@ -8,4 +8,4 @@ function FactorailNum (NoneNegativeNum){
     return NoneNegativeNum * FactorailNum(NoneNegativeNum-1)
 }
 
-console.log((FactorailNum(5)));
+console.log((FactorailNum(0)));

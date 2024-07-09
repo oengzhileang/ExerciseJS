@@ -7,7 +7,7 @@
 //     console.log("Goodbye");
 // }
 
-const { log } = require("console")
+// const { log } = require("console")
 
 // hello(goodbye);
 
@@ -23,14 +23,10 @@ const { log } = require("console")
 // sum(displayConsole,9,9);
 
 
-//Synchronous  will  start at the very top of the file and execute all the way down to the buttom  of file
+// Synchronous  will  start at the very top of the file and execute all the way down to the buttom  of file
 // let a =1;
 // let b =2;
 
-// //Settimeout Asynchronous
-// setTimeout(function(){
-//     console.log("Asynchronous");
-// },1000)
 // console.log("Synchronous");
 // console.log(a);
 // console.log(b);
@@ -38,7 +34,8 @@ const { log } = require("console")
 
 // function func1(Callback){
 //     setTimeout(function(){
-//         console.log("Task1"); Callback()
+//         console.log("Task1"); 
+//          Callback()
 //     },3000)
 // }
 // function func2() {
@@ -139,12 +136,33 @@ const { log } = require("console")
  
 // console.log(evenNumber);
 
-function performTask(taskName , callback){
-    console.log("Performing task :" + taskName);
+// function performTask(taskName , callback){
+//     console.log("Performing task :" + taskName);
+//     callback();
+// }
+// function TaskComplete() {
+//     console.log("Task completed");
+// }
+
+// performTask("Clean the house" , TaskComplete)
+// function greet(name, callback) {
+//     console.log('Hello ' + name);
+//     callback();
+//   }
+
+// function Welcome(){
+//   console.log('Welcome to the platform!');
+// }
+// greet("Alexa",Welcome)
+function fetchData(callback) {
+  setTimeout(() => {
+    console.log('Data fetched');
     callback();
-}
-function TaskComplete() {
-    console.log("Task completed");
+  }, 1000);
 }
 
-performTask("Clean the house" , TaskComplete)
+function processData() {
+  console.log('Processing data');
+}
+
+fetchData(processData);

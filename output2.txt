@@ -1,1 +1,1 @@
-Hello, this is input file txt content; First modification Second modification
+file written successfullySecond modification

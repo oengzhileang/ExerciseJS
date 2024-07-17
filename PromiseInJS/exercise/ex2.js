@@ -12,7 +12,7 @@ function Readfile(filepath) {
 }
 function writeFile() {
         return new Promise ((resolve,reject)=>{
-            fs.writeFile("writeFile.txt","Hello this is write file",(err)=>{
+            fs.writeFile("writeFile.txt","Hellokkk",(err)=>{
                 if(err){
                     reject("Error write file")
                 }else{
@@ -21,11 +21,10 @@ function writeFile() {
             })
         })
 }
-
 Readfile("input.txt")
     .then((message)=>{
         console.log(message);
-        return writeFile(message)
+        return writeFile()
     })
     .then((message)=>{
         console.log(message);
@@ -33,4 +32,3 @@ Readfile("input.txt")
     .catch((error)=>{
         console.log(error);
     })
-    
